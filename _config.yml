@@ -23,13 +23,18 @@ email: abc@xyz.com
 description: >- # this means to ignore newlines until "baseurl:"
   An installer framework aiming ease, usability, beauty, pragmatism, and most of all "distribution-agnostic".
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://calamares.io" # the base hostname & protocol for your site, e.g. http://example.com
+avatar: https://raw.githubusercontent.com/calamares/calamares/master/src/branding/default/squid.png
+github_username:  calamares/calamares
 
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-get-json
+  - jekyll-paginate
+jekyll_get_json:
+  - data: latest_release
+    json: "https://official-joke-api.appspot.com/jokes/programming/random"
 
 paginate: 5
 # Exclude from processing.
