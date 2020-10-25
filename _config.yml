@@ -21,7 +21,7 @@
 title: Calamares
 email: abc@xyz.com
 description: >- # this means to ignore newlines until "baseurl:"
-  hakuna matata
+  An installer framework aiming ease, usability, beauty, pragmatism, and most of all "distribution-agnostic".
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb

@@ -10,7 +10,7 @@
     </div>
 
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Releases</a>
 
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
@@ -31,6 +31,8 @@
       <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
     </nav>
 
-    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+    <p id="copyright">&copy; All trademarks and registered trademarks are the property of their respective owners. {{ site.time | date: '%Y' }}. <br/>
+      Calamares is a project sponsored by <a href="http://www.blue-systems.com/">Blue Systems</a>.
+      </p>
   </div>
 </div>
