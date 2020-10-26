@@ -34,9 +34,10 @@ plugins:
   - jekyll-paginate
 jekyll_get_json:
   - data: latest_release
-    json: "https://official-joke-api.appspot.com/jokes/programming/random"
+    json: "https://api.github.com/repos/calamares/calamares/releases/latest"
 
-paginate: 5
+paginate: 3
+paginate_path: "/page:num/"
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
