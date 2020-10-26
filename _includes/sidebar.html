@@ -5,6 +5,7 @@
         <a href="{{ site.baseurl }}">
           {{ site.title }}
         </a>
+        <span class="sidebar-nav-item" id="version">{{site.data.latest_release.tag_name}}</span>
       </h1>
       <p class="lead">{{ site.description }}</p>
     </div>
@@ -26,9 +27,8 @@
         {% endif %}
       {% endfor %}
 
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
+      <a class="sidebar-nav-item" href="{{site.data.latest_release.assets[0]browser_download_url }}">Download</a>
       <a class="sidebar-nav-item" href="https://github.com/calamares/calamares">GitHub project</a>
-      <span class="sidebar-nav-item">v{{site.latest_release.setup}}</span>
     </nav>
 
     <p id="copyright">&copy; All trademarks and registered trademarks are the property of their respective owners. {{ site.time | date: '%Y' }}. <br/>
