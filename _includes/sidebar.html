@@ -1,6 +1,9 @@
 <div class="sidebar">
   <div class="container sidebar-sticky">
-    <div class="sidebar-about">
+      <div style="display: flex; justify-content: center;">
+        <img src="/images/squid.png" alt="logo" style="width: 30%;">
+      </div>
+      <div class="sidebar-about">
       <h1>
         <a href="{{ site.baseurl }}">
           {{ site.title }}
@@ -12,7 +15,6 @@
 
     <nav class="sidebar-nav">
       <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Releases</a>
-
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
         `layout: page` in the front-matter. See readme for usage.
