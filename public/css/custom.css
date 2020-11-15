@@ -24,8 +24,33 @@
     margin-bottom: 0;
     font-size: 1.5rem;
 }
-#home-title{
+.home-title{
     font-size: 2.5rem;
     padding-bottom: 5vh;
+    padding-top: 5vh;
     text-align: center;
+}
+.quick-links{
+    display: flex;
+    flex-direction: column;
+}
+.quick-links .wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.wrap-in{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+.quick-links a{
+    color: #202020;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.v1,.v2{
+    min-height: 50vh;
 }

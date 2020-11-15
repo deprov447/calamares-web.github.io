@@ -3,18 +3,62 @@ layout: default
 title: Home
 ---
 <!-- <div class="launch-main"> -->
-    <h1 id="home-title">Releases and Posts</h1>
-    {% for post in site.posts limit:10 %}
-    <li class="release-list">
-        <h3>
-            <a href="{{ post.url }}">
-                {{ post.title }}
-            </a>
-        </h3>
-        <small>{{ post.date | date_to_string }}</small>
-        <hr>
-    </li>
-    {% endfor %}
-<!-- </div> -->
+<div class="v1">
+<h1 class="home-title" style="padding-top: 0;">Whats Calamares?</h1>
+<p>
+    Calamares is an installer framework. By design it is very customizable, in order to satisfy a wide variety of needs
+    and use cases.
+</p>
+<p>
+    Calamares aims to be easy, usable, beautiful, pragmatic, inclusive and distribution-agnostic.
+</p>
+<p>
 
+    Calamares includes an advanced partitioning feature, with support for both manual and automated partitioning operations.
+    It is the first installer with an automated “Replace Partition” option, which makes it easy to reuse a partition over
+    and over for distribution testing.
+</p>
+<p>
+    Got a Linux distribution but no system installer? Grab Calamares, mix and match any number of Calamares modules (or
+    write your own in Python or C++), throw together some branding, package it up and you are ready to ship!
+</p>
+</div>
+<div class="quick-links v2">
+    <h2 class="home-title">Quick Links</h2>
+    <div class="wrapper">
+    <div class="wrap-in">
+        <a href="https://github.com/calamares/calamares">
+        <img class="low-mar" src="/images/code.svg" alt="source-code">
+        <span class="hide">Source Code</span>
+        </a>
+    </div>
+    <div class="wrap-in">
+        <a href="#rels">
+        <img class="low-mar" src="/images/file-text.svg" alt="release-logs">
+        <span class="hide">Release Logs</span>
+    </a>
+    </div>
+    <div class="wrap-in">
+        <a href="https://github.com/calamares/calamares/releases">
+        <img class="low-mar" src="/images/download.svg" alt="downloads">
+        <span class="hide">Download</span>
+        </a>
+    </div>
+    </div>
+</div>
+<div class="v3">
+<h1 class="home-title" id="rels">Releases and Posts</h1>
+{% for post in site.posts limit:10 %}
+<li class="release-list">
+    <h3>
+        <a href="{{ post.url }}" style="font-size: 1.2rem;">
+            {{ post.title }}
+        </a>
+    </h3>
+    <small>{{ post.date | date_to_string }}</small>
+    <hr>
+</li>
+{% endfor %}
+<!-- </div> -->
 <a class="pagination-item" href="{{site.baseURL}}/page3" style="width: 100%; text-align: center;">SEE ALL</a>
+</div>
